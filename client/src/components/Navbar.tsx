@@ -12,6 +12,8 @@ export function Navbar() {
     { href: "/word", label: "Word" },
     { href: "/excel", label: "Excel" },
     { href: "/powerpoint", label: "PowerPoint" },
+    { href: "/comparacion", label: "Comparación" },
+    { href: "/faq", label: "FAQ" },
   ];
 
   return (

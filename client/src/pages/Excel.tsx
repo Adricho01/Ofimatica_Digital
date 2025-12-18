@@ -1,6 +1,7 @@
 import { Layout } from "@/components/Layout";
 import { Section } from "@/components/Section";
 import excelIcon from "@assets/generated_images/excel_spreadsheet_3d_icon.png";
+import excelUsageImage from "@assets/stock_images/data_analysis_spread_8eba7386.jpg";
 import { motion } from "framer-motion";
 import { Grid, BarChart3, Calculator, Database, Table } from "lucide-react";
 
@@ -23,17 +24,43 @@ export default function Excel() {
         </div>
       </div>
 
-      <Section title="¿Qué es Microsoft Excel?">
-        <p className="mb-4 text-lg font-medium text-green-900">
-          Una potente hoja de cálculo.
-        </p>
-        <p className="mb-4">
-          Microsoft Excel es un programa de hoja de cálculo que permite realizar operaciones con números organizados en una cuadrícula. Es útil para realizar desde simples sumas hasta cálculos complejos y gráficos.
-        </p>
-        <p>
-          <strong>¿Para qué sirve?</strong> En el ámbito educativo, es ideal para crear horarios, organizar listas de datos, realizar cálculos matemáticos automáticos y representar información mediante gráficos estadísticos.
-        </p>
-      </Section>
+      {/* ¿Qué es? Section */}
+      <div className="py-16 md:py-20 bg-white border-b border-slate-200">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-2 gap-10 items-center">
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+            >
+              <h2 className="text-3xl font-bold mb-6 text-foreground">¿Qué es Microsoft Excel?</h2>
+              <p className="mb-4 text-lg font-medium text-green-900">
+                Una potente hoja de cálculo.
+              </p>
+              <p className="mb-4 text-muted-foreground">
+                Microsoft Excel es un programa de hoja de cálculo que permite realizar operaciones con números organizados en una cuadrícula. Es útil para realizar desde simples sumas hasta cálculos complejos y gráficos.
+              </p>
+              <p className="text-muted-foreground">
+                <strong>¿Para qué sirve?</strong> En el ámbito educativo, es ideal para crear horarios, organizar listas de datos, realizar cálculos matemáticos automáticos y representar información mediante gráficos estadísticos.
+              </p>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="rounded-2xl overflow-hidden shadow-lg"
+            >
+              <img 
+                src={excelUsageImage} 
+                alt="Análisis de datos en hoja de cálculo" 
+                className="w-full h-full object-cover"
+              />
+            </motion.div>
+          </div>
+        </div>
+      </div>
 
       <div className="bg-white py-16">
         <div className="container mx-auto px-4">
@@ -78,26 +105,53 @@ export default function Excel() {
         </div>
       </div>
 
-      <Section title="Partes del Programa" reverse className="bg-slate-50">
-        <ul className="space-y-4">
-          <li className="bg-white p-4 rounded-lg shadow-sm border-l-4 border-green-500">
-            <strong className="text-green-800 block mb-1">Barra de Fórmulas:</strong>
-            Espacio donde se introduce o edita el contenido de una celda (texto, números o fórmulas).
-          </li>
-          <li className="bg-white p-4 rounded-lg shadow-sm border-l-4 border-green-500">
-            <strong className="text-green-800 block mb-1">Encabezados de Fila y Columna:</strong>
-            Letras superiores (Columnas: A, B, C...) y números laterales (Filas: 1, 2, 3...) que identifican las celdas.
-          </li>
-          <li className="bg-white p-4 rounded-lg shadow-sm border-l-4 border-green-500">
-            <strong className="text-green-800 block mb-1">Etiquetas de Hoja:</strong>
-            Pestañas en la parte inferior que permiten cambiar entre diferentes hojas de cálculo dentro del mismo archivo.
-          </li>
-          <li className="bg-white p-4 rounded-lg shadow-sm border-l-4 border-green-500">
-            <strong className="text-green-800 block mb-1">Celda Activa:</strong>
-            La celda seleccionada actualmente, resaltada con un borde más grueso.
-          </li>
-        </ul>
-      </Section>
+      {/* Partes del Programa */}
+      <div className="py-16 md:py-20 bg-slate-50 border-t border-slate-200">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold mb-6 text-center mb-10">Partes del Programa</h2>
+          <ul className="space-y-4 max-w-3xl mx-auto">
+            <motion.li 
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="bg-white p-4 rounded-lg shadow-sm border-l-4 border-green-500"
+            >
+              <strong className="text-green-800 block mb-1">Barra de Fórmulas:</strong>
+              Espacio donde se introduce o edita el contenido de una celda (texto, números o fórmulas).
+            </motion.li>
+            <motion.li 
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.1 }}
+              className="bg-white p-4 rounded-lg shadow-sm border-l-4 border-green-500"
+            >
+              <strong className="text-green-800 block mb-1">Encabezados de Fila y Columna:</strong>
+              Letras superiores (Columnas: A, B, C...) y números laterales (Filas: 1, 2, 3...) que identifican las celdas.
+            </motion.li>
+            <motion.li 
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.2 }}
+              className="bg-white p-4 rounded-lg shadow-sm border-l-4 border-green-500"
+            >
+              <strong className="text-green-800 block mb-1">Etiquetas de Hoja:</strong>
+              Pestañas en la parte inferior que permiten cambiar entre diferentes hojas de cálculo dentro del mismo archivo.
+            </motion.li>
+            <motion.li 
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.3 }}
+              className="bg-white p-4 rounded-lg shadow-sm border-l-4 border-green-500"
+            >
+              <strong className="text-green-800 block mb-1">Celda Activa:</strong>
+              La celda seleccionada actualmente, resaltada con un borde más grueso.
+            </motion.li>
+          </ul>
+        </div>
+      </div>
     </Layout>
   );
 }

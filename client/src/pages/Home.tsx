@@ -2,9 +2,9 @@ import { Layout } from "@/components/Layout";
 import { Section } from "@/components/Section";
 import { SoftwareCard } from "@/components/SoftwareCard";
 import heroImage from "@assets/generated_images/isometric_office_tools_illustration.png";
-import studentImage from "@assets/generated_images/student_learning_illustration.png";
+import officeImage from "@assets/stock_images/modern_office_worksp_c8a3af81.jpg";
 import { motion } from "framer-motion";
-import { CheckCircle2, Clock, Layers, GraduationCap } from "lucide-react";
+import { CheckCircle2, Clock, Layers, GraduationCap, Link } from "lucide-react";
 
 export default function Home() {
   return (
@@ -46,15 +46,40 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Introduction */}
-      <Section title="¿Qué es la ofimática?" reverse>
-        <p className="mb-4">
-          La ofimática es el conjunto de técnicas, aplicaciones y herramientas informáticas que se utilizan en funciones de oficina para optimizar, automatizar y mejorar los procedimientos o tareas relacionados.
-        </p>
-        <p>
-          Las herramientas ofimáticas permiten idear, crear, manipular, transmitir y almacenar información necesaria en una oficina o en el ámbito académico. Actualmente, es fundamental dominar estos paquetes de software para el desarrollo educativo y profesional.
-        </p>
-      </Section>
+      {/* Introduction - ¿Qué es la ofimática? */}
+      <div className="py-16 md:py-20 bg-white border-b border-slate-200">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-2 gap-10 items-center">
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+            >
+              <h2 className="text-3xl font-bold mb-6 text-foreground">¿Qué es la ofimática?</h2>
+              <p className="mb-4 text-muted-foreground">
+                La ofimática es el conjunto de técnicas, aplicaciones y herramientas informáticas que se utilizan en funciones de oficina para optimizar, automatizar y mejorar los procedimientos o tareas relacionados.
+              </p>
+              <p className="text-muted-foreground">
+                Las herramientas ofimáticas permiten idear, crear, manipular, transmitir y almacenar información necesaria en una oficina o en el ámbito académico. Actualmente, es fundamental dominar estos paquetes de software para el desarrollo educativo y profesional.
+              </p>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="rounded-2xl overflow-hidden shadow-lg"
+            >
+              <img 
+                src={officeImage} 
+                alt="Oficina moderna" 
+                className="w-full h-full object-cover"
+              />
+            </motion.div>
+          </div>
+        </div>
+      </div>
 
       {/* Importance & Benefits Grid */}
       <div className="py-24 bg-white">
@@ -109,7 +134,7 @@ export default function Home() {
       </div>
 
       {/* Uses Section */}
-      <Section title="Usos de la Ofimática" image={studentImage} imageAlt="Estudiante usando ofimática">
+      <Section title="Usos de la Ofimática" image={heroImage} imageAlt="Estudiante usando ofimática">
         <ul className="space-y-4">
           <li className="flex items-start gap-3">
             <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0 mt-1">

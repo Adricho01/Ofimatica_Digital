@@ -8,6 +8,8 @@ import Home from "@/pages/Home";
 import Word from "@/pages/Word";
 import Excel from "@/pages/Excel";
 import PowerPoint from "@/pages/PowerPoint";
+import Comparison from "@/pages/Comparison";
+import FAQ from "@/pages/FAQ";
 
 function Router() {
   return (
@@ -16,6 +18,8 @@ function Router() {
       <Route path="/word" component={Word} />
       <Route path="/excel" component={Excel} />
       <Route path="/powerpoint" component={PowerPoint} />
+      <Route path="/comparacion" component={Comparison} />
+      <Route path="/faq" component={FAQ} />
       <Route component={NotFound} />
     </Switch>
   );

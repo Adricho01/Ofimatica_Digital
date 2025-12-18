@@ -1,6 +1,7 @@
 import { Layout } from "@/components/Layout";
 import { Section } from "@/components/Section";
 import pptIcon from "@assets/generated_images/powerpoint_slide_3d_icon.png";
+import pptUsageImage from "@assets/stock_images/business_presentatio_8750b0c7.jpg";
 import { motion } from "framer-motion";
 import { Presentation, Play, MonitorPlay, Palette, Repeat } from "lucide-react";
 
@@ -23,17 +24,43 @@ export default function PowerPoint() {
         </div>
       </div>
 
-      <Section title="¿Qué es Microsoft PowerPoint?">
-        <p className="mb-4 text-lg font-medium text-orange-900">
-          Software de presentaciones visuales.
-        </p>
-        <p className="mb-4">
-          Microsoft PowerPoint es un programa diseñado para realizar presentaciones a través de diapositivas. Permite comunicar información e ideas de forma visual y atractiva.
-        </p>
-        <p>
-          <strong>¿Para qué sirve?</strong> Es fundamental en la escuela para exposiciones orales, defensa de proyectos y creación de material didáctico visual. Ayuda a captar la atención de la audiencia.
-        </p>
-      </Section>
+      {/* ¿Qué es? Section */}
+      <div className="py-16 md:py-20 bg-white border-b border-slate-200">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-2 gap-10 items-center">
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+            >
+              <h2 className="text-3xl font-bold mb-6 text-foreground">¿Qué es Microsoft PowerPoint?</h2>
+              <p className="mb-4 text-lg font-medium text-orange-900">
+                Software de presentaciones visuales.
+              </p>
+              <p className="mb-4 text-muted-foreground">
+                Microsoft PowerPoint es un programa diseñado para realizar presentaciones a través de diapositivas. Permite comunicar información e ideas de forma visual y atractiva.
+              </p>
+              <p className="text-muted-foreground">
+                <strong>¿Para qué sirve?</strong> Es fundamental en la escuela para exposiciones orales, defensa de proyectos y creación de material didáctico visual. Ayuda a captar la atención de la audiencia.
+              </p>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="rounded-2xl overflow-hidden shadow-lg"
+            >
+              <img 
+                src={pptUsageImage} 
+                alt="Presentación de negocio" 
+                className="w-full h-full object-cover"
+              />
+            </motion.div>
+          </div>
+        </div>
+      </div>
 
       <div className="bg-white py-16">
         <div className="container mx-auto px-4">
@@ -78,26 +105,53 @@ export default function PowerPoint() {
         </div>
       </div>
 
-      <Section title="Partes del Programa" reverse className="bg-slate-50">
-        <ul className="space-y-4">
-          <li className="bg-white p-4 rounded-lg shadow-sm border-l-4 border-orange-500">
-            <strong className="text-orange-800 block mb-1">Panel de Diapositivas:</strong>
-            Columna izquierda que muestra miniaturas de todas las diapositivas para organizarlas.
-          </li>
-          <li className="bg-white p-4 rounded-lg shadow-sm border-l-4 border-orange-500">
-            <strong className="text-orange-800 block mb-1">Área de Diapositiva:</strong>
-            Zona central grande donde se edita el diseño y contenido de la diapositiva actual.
-          </li>
-          <li className="bg-white p-4 rounded-lg shadow-sm border-l-4 border-orange-500">
-            <strong className="text-orange-800 block mb-1">Notas de Orador:</strong>
-            Espacio inferior para escribir apuntes que solo ve el presentador, no la audiencia.
-          </li>
-          <li className="bg-white p-4 rounded-lg shadow-sm border-l-4 border-orange-500">
-            <strong className="text-orange-800 block mb-1">Botones de Vistas:</strong>
-            Permiten cambiar entre vista normal, clasificador de diapositivas y vista de lectura o presentación.
-          </li>
-        </ul>
-      </Section>
+      {/* Partes del Programa */}
+      <div className="py-16 md:py-20 bg-slate-50 border-t border-slate-200">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold mb-6 text-center mb-10">Partes del Programa</h2>
+          <ul className="space-y-4 max-w-3xl mx-auto">
+            <motion.li 
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="bg-white p-4 rounded-lg shadow-sm border-l-4 border-orange-500"
+            >
+              <strong className="text-orange-800 block mb-1">Panel de Diapositivas:</strong>
+              Columna izquierda que muestra miniaturas de todas las diapositivas para organizarlas.
+            </motion.li>
+            <motion.li 
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.1 }}
+              className="bg-white p-4 rounded-lg shadow-sm border-l-4 border-orange-500"
+            >
+              <strong className="text-orange-800 block mb-1">Área de Diapositiva:</strong>
+              Zona central grande donde se edita el diseño y contenido de la diapositiva actual.
+            </motion.li>
+            <motion.li 
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.2 }}
+              className="bg-white p-4 rounded-lg shadow-sm border-l-4 border-orange-500"
+            >
+              <strong className="text-orange-800 block mb-1">Notas de Orador:</strong>
+              Espacio inferior para escribir apuntes que solo ve el presentador, no la audiencia.
+            </motion.li>
+            <motion.li 
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.3 }}
+              className="bg-white p-4 rounded-lg shadow-sm border-l-4 border-orange-500"
+            >
+              <strong className="text-orange-800 block mb-1">Botones de Vistas:</strong>
+              Permiten cambiar entre vista normal, clasificador de diapositivas y vista de lectura o presentación.
+            </motion.li>
+          </ul>
+        </div>
+      </div>
     </Layout>
   );
 }
