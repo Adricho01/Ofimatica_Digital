@@ -1,0 +1,25 @@
+Descripción del diseño del sitio web
+El sitio web titulado “Introducción a la Ofimática” presentará un diseño educativo, informativo y visualmente atractivo, desarrollado con el propósito de brindar información amplia y clara sobre la ofimática y el uso de las aplicaciones Microsoft Word, Microsoft Excel y Microsoft PowerPoint. El diseño estará orientado a facilitar la comprensión del usuario mediante una estructura ordenada, uso de imágenes relacionadas y una navegación sencilla.
+En la parte superior del sitio web se ubicará un encabezado que contendrá el nombre del sitio y un menú de navegación, el cual permitirá acceder de forma rápida a la página principal y a las secciones de Word, Excel y PowerPoint. El menú será simple y fácil de usar, pensado para estudiantes y usuarios con conocimientos básicos de informática.
+Página principal
+La página principal estará dedicada a la Ofimática y funcionará como una introducción general al tema. En esta sección se desarrollará información organizada en los siguientes apartados:
+•	Introducción a la ofimática: Presentación inicial del tema para contextualizar al usuario.
+•	¿Qué es la ofimática?: Definición clara y sencilla del concepto.
+•	Importancia de la ofimática: Explicación de su relevancia en el ámbito educativo y académico.
+•	Usos de la ofimática: Descripción de cómo se aplica la ofimática en tareas escolares, trabajos escritos y presentaciones.
+•	Beneficios de la ofimática: Ventajas como el ahorro de tiempo, la organización de la información y la mejora en la presentación de los trabajos.
+•	Aporte educativo: Información adicional sobre cómo la ofimática contribuye al desarrollo de habilidades digitales en los estudiantes.
+Cada uno de estos apartados estará acompañado de imágenes relacionadas, con el fin de reforzar la información y hacer el contenido más visual y comprensible.
+Al final de la página principal se incluirán tres recuadros informativos, organizados de forma horizontal. Cada recuadro representará una aplicación ofimática: Microsoft Word, Microsoft Excel y Microsoft PowerPoint. Estos recuadros contendrán una imagen representativa, el nombre del programa y un enlace que dirigirá al usuario a la sección correspondiente.
+Secciones de Word, Excel y PowerPoint
+Cada una de las secciones dedicadas a Microsoft Word, Microsoft Excel y Microsoft PowerPoint mantendrá un diseño similar, con el fin de conservar una coherencia visual en todo el sitio web. En cada sección se desarrollará información amplia y detallada, organizada en los siguientes apartados:
+•	¿Qué es?: Definición del programa.
+•	Pequeño concepto: Explicación breve y fácil de entender.
+•	¿Para qué sirve?: Uso principal del programa en el ámbito educativo.
+•	Características: Principales características de cada aplicación.
+•	Funciones: Funciones más importantes que ofrece cada herramienta.
+•	Partes del programa: Descripción de las partes principales de Word, Excel o PowerPoint y para qué sirve cada una.
+Todos estos apartados estarán acompañados de imágenes relacionadas, íconos y elementos visuales, que ayudarán a reforzar la información y facilitarán la comprensión del contenido.
+El diseño del sitio web será responsive, lo que permitirá su correcta visualización en computadoras, tablets y teléfonos móviles. Se utilizarán colores suaves, tipografías legibles y una estructura clara para mejorar la experiencia del usuario.
+Pie de página
+En la parte inferior del sitio web (pie de página) se incluirá información complementaria, donde se mostrará el año de creación del sitio web (2025 – 2026) junto con un texto de derechos reservados, indicando que el contenido es de uso educativo. Este apartado brindará un cierre formal al sitio web y aportará un aspecto más profesional al diseño general.
