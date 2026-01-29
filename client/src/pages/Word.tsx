@@ -207,20 +207,25 @@ export default function Word() {
             className="mb-16 rounded-2xl overflow-hidden shadow-2xl bg-white p-4 border border-blue-100"
           >
             <img 
-              src="/attached_assets/stock_images/word_interface_diagram.jpg" 
-              alt="Diagrama de la interfaz de Word" 
+              src="/attached_assets/Partes-de-Word_1769728656772.png" 
+              alt="Diagrama de las partes de la ventana de Word" 
               className="w-full h-auto rounded-lg"
             />
           </motion.div>
 
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
             {[
-              { title: "Cinta de Opciones", desc: "Barra superior con pestañas (Inicio, Insertar, Diseño, etc.) que contiene todas las herramientas organizadas por categorías.", color: "blue" },
-              { title: "Barra de Acceso Rápido", desc: "Pequeña barra en la esquina superior izquierda con comandos frecuentes: Guardar, Deshacer, Rehacer.", color: "indigo" },
-              { title: "Área de Documento", desc: "El espacio central blanco que simula una hoja de papel donde escribes y editas tu contenido.", color: "purple" },
-              { title: "Regla", desc: "Muestra las medidas del documento y permite ajustar sangrías y márgenes arrastrando los marcadores.", color: "violet" },
-              { title: "Barra de Estado", desc: "Parte inferior que muestra el número de página, palabras, idioma y controles de zoom.", color: "blue" },
-              { title: "Panel de Navegación", desc: "Panel lateral que permite buscar texto y navegar por títulos, páginas o resultados de búsqueda.", color: "indigo" }
+              { title: "Barra de título", desc: "Muestra el nombre del documento y el programa (Word). También contiene los botones para minimizar, restaurar/maximizar y cerrar.", color: "blue" },
+              { title: "Barra de menú", desc: "Contiene las opciones principales como Archivo, Inicio, Insertar, Diseño, Referencias, Revisar y Vista.", color: "indigo" },
+              { title: "Cinta de opciones", desc: "Área donde aparecen los comandos organizados en grupos, como Fuente, Párrafo y Estilos.", color: "purple" },
+              { title: "Pestaña de cinta de opciones", desc: "Son las pestañas que organizan las herramientas de Word (Inicio, Insertar, Diseño, etc.).", color: "violet" },
+              { title: "Barra de estado", desc: "Se encuentra en la parte inferior. Muestra información como número de páginas, palabras y estado.", color: "blue" },
+              { title: "Vistas del documento", desc: "Permiten cambiar la forma de visualizar el documento: modo lectura, diseño de impresión y web.", color: "indigo" },
+              { title: "Zoom", desc: "Permite acercar o alejar el documento para verlo más grande o más pequeño.", color: "purple" },
+              { title: "Barra de desplazamiento", desc: "Sirve para moverse por el documento hacia arriba, abajo o a los lados.", color: "violet" },
+              { title: "Regla vertical y horizontal", desc: "Ayuda a alinear texto, ajustar márgenes y colocar imágenes correctamente.", color: "blue" },
+              { title: "Barra de herramientas de acceso rápido", desc: "Incluye accesos directos a comandos frecuentes como Guardar, Deshacer y Rehacer.", color: "indigo" },
+              { title: "Hoja de trabajo", desc: "Es el área donde se escribe, edita y da formato al contenido del documento.", color: "purple" }
             ].map((item, i) => (
               <motion.div
                 key={i}
@@ -231,7 +236,7 @@ export default function Word() {
                 className="bg-white p-6 rounded-xl shadow-sm border-l-4 border-blue-500"
               >
                 <h3 className="font-bold text-lg text-blue-900 mb-2">{item.title}</h3>
-                <p className="text-slate-600">{item.desc}</p>
+                <p className="text-slate-600 text-sm leading-relaxed">{item.desc}</p>
               </motion.div>
             ))}
           </div>
