@@ -3,6 +3,7 @@ import wordIcon from "@assets/word_document_3d_icon_1769725123740.png";
 import wordImage1 from "@assets/stock_images/person_writing_in_do_3d0d7775.jpg";
 import wordImage2 from "@assets/stock_images/microsoft_word_docum_ceaa36ef.jpg";
 import typingImage from "@assets/stock_images/person_typing_keyboa_fe683251.jpg";
+import diagramWord from "@/assets/images/word_parts_diagram_generated.png";
 import { motion } from "framer-motion";
 import { FileText, Edit3, Image as ImageIcon, Layout as LayoutIcon, Type, Sparkles, CheckCircle2, BookOpen, FileCheck, Palette, List, Table2, Printer, Save, Share2 } from "lucide-react";
 import { Link } from "wouter";
@@ -207,9 +208,9 @@ export default function Word() {
             className="mb-16 rounded-2xl overflow-hidden shadow-2xl bg-white p-4 border border-blue-100"
           >
             <img 
-              src="/attached_assets/Partes-de-Word_1769728656772.png" 
+              src={diagramWord} 
               alt="Diagrama de las partes de la ventana de Word" 
-              className="w-full h-auto rounded-lg"
+              className="w-full h-auto rounded-lg shadow-inner"
             />
           </motion.div>
 
