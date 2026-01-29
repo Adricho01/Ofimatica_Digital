@@ -1,5 +1,5 @@
 import { Layout } from "@/components/Layout";
-import pptIcon from "@assets/generated_images/powerpoint_slide_3d_icon.png";
+import pptIcon from "@assets/powerpoint_slide_3d_icon_1769725123738.png";
 import pptImage1 from "@assets/stock_images/business_presentatio_8750b0c7.jpg";
 import pptImage2 from "@assets/stock_images/powerpoint_presentat_f7546703.jpg";
 import tabletImage from "@assets/stock_images/digital_tablet_prese_b835363a.jpg";

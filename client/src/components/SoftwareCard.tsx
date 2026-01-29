@@ -1,9 +1,9 @@
 import { Link } from "wouter";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
-import wordIcon from "@assets/generated_images/word_document_3d_icon.png";
-import excelIcon from "@assets/generated_images/excel_spreadsheet_3d_icon.png";
-import pptIcon from "@assets/generated_images/powerpoint_slide_3d_icon.png";
+import wordIcon from "@assets/word_document_3d_icon_1769725123740.png";
+import excelIcon from "@assets/excel_spreadsheet_3d_icon_1769725123740.png";
+import pptIcon from "@assets/powerpoint_slide_3d_icon_1769725123738.png";
 
 interface SoftwareCardProps {
   type: "word" | "excel" | "powerpoint";

@@ -1,5 +1,5 @@
 import { Layout } from "@/components/Layout";
-import excelIcon from "@assets/generated_images/excel_spreadsheet_3d_icon.png";
+import excelIcon from "@assets/excel_spreadsheet_3d_icon_1769725123740.png";
 import excelImage1 from "@assets/stock_images/data_analysis_spread_8eba7386.jpg";
 import excelImage2 from "@assets/stock_images/excel_spreadsheet_fi_0578f8c7.jpg";
 import { motion } from "framer-motion";

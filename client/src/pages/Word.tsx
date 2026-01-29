@@ -1,5 +1,5 @@
 import { Layout } from "@/components/Layout";
-import wordIcon from "@assets/generated_images/word_document_3d_icon.png";
+import wordIcon from "@assets/word_document_3d_icon_1769725123740.png";
 import wordImage1 from "@assets/stock_images/person_writing_in_do_3d0d7775.jpg";
 import wordImage2 from "@assets/stock_images/microsoft_word_docum_ceaa36ef.jpg";
 import typingImage from "@assets/stock_images/person_typing_keyboa_fe683251.jpg";
