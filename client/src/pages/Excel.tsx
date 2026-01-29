@@ -238,7 +238,7 @@ export default function Excel() {
             className="mb-16 rounded-2xl overflow-hidden shadow-2xl bg-white p-4 border border-green-100"
           >
             <img 
-              src="/attached_assets/Partes_Ventana_Excel_1769727444779.jpeg" 
+              src="/attached_assets/Partes_Ventana_Excel_1769727697615.png" 
               alt="Diagrama de las partes de la ventana de Excel" 
               className="w-full h-auto rounded-lg"
             />
