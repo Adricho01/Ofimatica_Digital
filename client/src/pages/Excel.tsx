@@ -2,7 +2,7 @@ import { Layout } from "@/components/Layout";
 import excelIcon from "@assets/excel_spreadsheet_3d_icon_1769725123740.png";
 import excelImage1 from "@assets/stock_images/data_analysis_spread_8eba7386.jpg";
 import excelImage2 from "@assets/stock_images/excel_spreadsheet_fi_0578f8c7.jpg";
-import diagramExcel from "@/assets/images/excel_parts_diagram_generated.png";
+import diagramExcel from "/attached_assets/excel_parts_diagram_generated_1769728182814.png";
 import { motion } from "framer-motion";
 import { Grid, BarChart3, Calculator, Database, Table, CheckCircle2, Sparkles, TrendingUp, Filter, PieChart, FileSpreadsheet, Sigma, Search, Percent } from "lucide-react";
 import { Link } from "wouter";
