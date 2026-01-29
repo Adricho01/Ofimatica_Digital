@@ -310,6 +310,27 @@ export default function PowerPoint() {
         </div>
       </div>
 
+      {/* Recursos Adicionales */}
+      <div className="py-16 bg-white border-t border-slate-100">
+        <div className="container mx-auto px-4 text-center">
+          <div className="max-w-2xl mx-auto p-8 rounded-3xl bg-orange-50 border border-orange-100 shadow-sm">
+            <h2 className="text-2xl font-bold text-slate-900 mb-4">¿Necesitas profundizar?</h2>
+            <p className="text-slate-600 mb-6">
+              Descarga el manual completo en PDF para convertirte en un experto de Microsoft PowerPoint.
+            </p>
+            <a 
+              href="https://escuela.fgr.gob.sv/wp-content/uploads/Leyes/Leyes-2/Manual-Power-Point.pdf" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-orange-600 text-white font-bold rounded-2xl hover:bg-orange-700 transition-all shadow-lg hover:shadow-orange-200"
+            >
+              <Presentation className="w-5 h-5" />
+              Descargar Manual de PowerPoint (PDF)
+            </a>
+          </div>
+        </div>
+      </div>
+
       {/* CTA */}
       <div className="py-16 bg-gradient-to-r from-orange-600 to-red-600 text-white">
         <div className="container mx-auto px-4 text-center">

@@ -281,6 +281,27 @@ export default function Word() {
         </div>
       </div>
 
+      {/* Recursos Adicionales */}
+      <div className="py-16 bg-white border-t border-slate-100">
+        <div className="container mx-auto px-4 text-center">
+          <div className="max-w-2xl mx-auto p-8 rounded-3xl bg-blue-50 border border-blue-100 shadow-sm">
+            <h2 className="text-2xl font-bold text-slate-900 mb-4">¿Necesitas profundizar?</h2>
+            <p className="text-slate-600 mb-6">
+              Descarga el manual completo en PDF para convertirte en un experto de Microsoft Word.
+            </p>
+            <a 
+              href="https://www.pol.una.py/wp-content/uploads/2022/09/4.-Manual-de-Word.pdf" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-blue-600 text-white font-bold rounded-2xl hover:bg-blue-700 transition-all shadow-lg hover:shadow-blue-200"
+            >
+              <FileText className="w-5 h-5" />
+              Descargar Manual de Word (PDF)
+            </a>
+          </div>
+        </div>
+      </div>
+
       {/* CTA */}
       <div className="py-16 bg-gradient-to-r from-blue-600 to-indigo-600 text-white">
         <div className="container mx-auto px-4 text-center">

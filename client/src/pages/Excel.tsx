@@ -4,7 +4,7 @@ import excelImage1 from "@assets/stock_images/data_analysis_spread_8eba7386.jpg"
 import excelImage2 from "@assets/stock_images/excel_spreadsheet_fi_0578f8c7.jpg";
 import diagramExcel from "@/assets/images/excel_parts_diagram_generated.png";
 import { motion } from "framer-motion";
-import { Grid, BarChart3, Calculator, Database, Table, CheckCircle2, Sparkles, TrendingUp, Filter, PieChart, FileSpreadsheet, Sigma, Search, Percent } from "lucide-react";
+import { Grid, BarChart3, Calculator, Database, Table, CheckCircle2, Sparkles, TrendingUp, Filter, PieChart, FileSpreadsheet, Sigma, Search, Percent, Table2 } from "lucide-react";
 import { Link } from "wouter";
 
 export default function Excel() {
@@ -272,6 +272,27 @@ export default function Excel() {
                 <p className="text-slate-600">{item.desc}</p>
               </motion.div>
             ))}
+          </div>
+        </div>
+      </div>
+
+      {/* Recursos Adicionales */}
+      <div className="py-16 bg-white border-t border-slate-100">
+        <div className="container mx-auto px-4 text-center">
+          <div className="max-w-2xl mx-auto p-8 rounded-3xl bg-green-50 border border-green-100 shadow-sm">
+            <h2 className="text-2xl font-bold text-slate-900 mb-4">¿Necesitas profundizar?</h2>
+            <p className="text-slate-600 mb-6">
+              Descarga el manual completo en PDF para convertirte en un experto de Microsoft Excel.
+            </p>
+            <a 
+              href="https://www.plenainclusion.org/wp-content/uploads/2022/02/Plena-inclusion-Murcia.-Guia-de-Excel.pdf" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-green-600 text-white font-bold rounded-2xl hover:bg-green-700 transition-all shadow-lg hover:shadow-green-200"
+            >
+              <Table2 className="w-5 h-5" />
+              Descargar Manual de Excel (PDF)
+            </a>
           </div>
         </div>
       </div>
