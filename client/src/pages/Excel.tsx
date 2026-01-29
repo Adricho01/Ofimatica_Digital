@@ -238,20 +238,26 @@ export default function Excel() {
             className="mb-16 rounded-2xl overflow-hidden shadow-2xl bg-white p-4 border border-green-100"
           >
             <img 
-              src="/attached_assets/stock_images/excel_interface_diagram.jpg" 
-              alt="Diagrama de la interfaz de Excel" 
+              src="/attached_assets/Partes_Ventana_Excel_1769727444779.jpeg" 
+              alt="Diagrama de las partes de la ventana de Excel" 
               className="w-full h-auto rounded-lg"
             />
           </motion.div>
 
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
             {[
-              { title: "Barra de Fórmulas", desc: "Muestra y permite editar el contenido de la celda activa. Aquí escribes tus fórmulas y funciones." },
-              { title: "Encabezados de Columna", desc: "Letras en la parte superior (A, B, C...) que identifican cada columna." },
-              { title: "Encabezados de Fila", desc: "Números en el lado izquierdo (1, 2, 3...) que identifican cada fila." },
-              { title: "Celda Activa", desc: "La celda seleccionada, resaltada con un borde verde más grueso. Su dirección aparece en el cuadro de nombres." },
-              { title: "Etiquetas de Hoja", desc: "Pestañas en la parte inferior que permiten navegar entre diferentes hojas del mismo libro." },
-              { title: "Cuadro de Nombres", desc: "Muestra la dirección de la celda activa (ej: A1, B5) y permite navegar rápidamente." }
+              { title: "Barra de título", desc: "Muestra el nombre del archivo que estás usando y el programa (Excel). Ejemplo: Libro1 – Excel." },
+              { title: "Barra de herramientas de acceso rápido", desc: "Contiene accesos directos a comandos frecuentes como Guardar, Deshacer y Rehacer. Se puede personalizar." },
+              { title: "Cinta de opciones", desc: "Es la franja superior donde están las pestañas como Inicio, Insertar, Fórmulas, Datos, etc. Aquí se encuentran todas las herramientas." },
+              { title: "Cuadro de nombres", desc: "Muestra la referencia de la celda activa (ej: A1, B5). También sirve para ir rápidamente a una celda escribiendo su nombre." },
+              { title: "Barra de fórmulas", desc: "Permite ver, escribir o editar el contenido de una celda, como textos, números o fórmulas." },
+              { title: "Fila", desc: "Son las líneas horizontales de la hoja de cálculo. Se identifican con números (1, 2, 3…)." },
+              { title: "Columna", desc: "Son las líneas verticales de la hoja de cálculo. Se identifican con letras (A, B, C…)." },
+              { title: "Celda", desc: "Es la intersección entre una fila y una columna. Aquí se ingresan los datos. Ejemplo: celda A1." },
+              { title: "Hoja de cálculo", desc: "Es el área de trabajo formada por filas, columnas y celdas. Un archivo de Excel puede tener varias hojas." },
+              { title: "Barra de desplazamiento", desc: "Permite moverte por la hoja de cálculo hacia arriba, abajo, izquierda o derecha." },
+              { title: "Tipo de vista", desc: "Permite cambiar cómo se muestra la hoja (vista normal, diseño de página, vista previa de saltos)." },
+              { title: "Barra de estado", desc: "Muestra información como el estado del documento, cálculos rápidos (suma, promedio) y el nivel de zoom." }
             ].map((item, i) => (
               <motion.div
                 key={i}
