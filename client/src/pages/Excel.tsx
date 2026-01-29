@@ -2,6 +2,7 @@ import { Layout } from "@/components/Layout";
 import excelIcon from "@assets/excel_spreadsheet_3d_icon_1769725123740.png";
 import excelImage1 from "@assets/stock_images/data_analysis_spread_8eba7386.jpg";
 import excelImage2 from "@assets/stock_images/excel_spreadsheet_fi_0578f8c7.jpg";
+import diagramExcel from "@/assets/images/excel_parts_diagram_generated.png";
 import { motion } from "framer-motion";
 import { Grid, BarChart3, Calculator, Database, Table, CheckCircle2, Sparkles, TrendingUp, Filter, PieChart, FileSpreadsheet, Sigma, Search, Percent } from "lucide-react";
 import { Link } from "wouter";
@@ -238,10 +239,9 @@ export default function Excel() {
             className="mb-16 rounded-2xl overflow-hidden shadow-2xl bg-white p-4 border border-green-100"
           >
             <img 
-              src="/attached_assets/Partes_Ventana_Excel_1769727697615.png" 
-              key="excel-diagram-new"
+              src={diagramExcel} 
               alt="Diagrama de las partes de la ventana de Excel" 
-              className="w-full h-auto rounded-lg"
+              className="w-full h-auto rounded-lg shadow-inner"
             />
           </motion.div>
 
