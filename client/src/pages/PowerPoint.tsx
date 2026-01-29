@@ -230,11 +230,25 @@ export default function PowerPoint() {
       <div className="py-24 bg-orange-50">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-4xl font-bold mb-6">Partes de la Interfaz</h2>
+            <h2 className="text-4xl font-bold mb-6">Partes de la Ventana de PowerPoint</h2>
             <p className="text-lg text-slate-600">
               Conoce los elementos principales de la ventana de PowerPoint.
             </p>
           </div>
+
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="mb-16 rounded-2xl overflow-hidden shadow-2xl bg-white p-4 border border-orange-100"
+          >
+            <img 
+              src="/attached_assets/stock_images/powerpoint_interface_diagram.jpg" 
+              alt="Diagrama de la interfaz de PowerPoint" 
+              className="w-full h-auto rounded-lg"
+            />
+          </motion.div>
+
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {[
               { title: "Panel de Diapositivas", desc: "Columna izquierda con miniaturas de todas las diapositivas para navegación y reorganización." },

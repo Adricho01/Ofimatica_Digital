@@ -194,11 +194,25 @@ export default function Word() {
       <div className="py-24 bg-blue-50">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-4xl font-bold mb-6">Partes de la Interfaz</h2>
+            <h2 className="text-4xl font-bold mb-6">Partes de la Ventana de Word</h2>
             <p className="text-lg text-slate-600">
               Conoce los elementos principales de la ventana de Word para trabajar eficientemente.
             </p>
           </div>
+
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="mb-16 rounded-2xl overflow-hidden shadow-2xl bg-white p-4 border border-blue-100"
+          >
+            <img 
+              src="/attached_assets/stock_images/word_interface_diagram.jpg" 
+              alt="Diagrama de la interfaz de Word" 
+              className="w-full h-auto rounded-lg"
+            />
+          </motion.div>
+
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {[
               { title: "Cinta de Opciones", desc: "Barra superior con pestañas (Inicio, Insertar, Diseño, etc.) que contiene todas las herramientas organizadas por categorías.", color: "blue" },
