@@ -239,6 +239,7 @@ export default function Excel() {
           >
             <img 
               src="/attached_assets/Partes_Ventana_Excel_1769727697615.png" 
+              key="excel-diagram-new"
               alt="Diagrama de las partes de la ventana de Excel" 
               className="w-full h-auto rounded-lg"
             />
