@@ -3,6 +3,7 @@ import pptIcon from "@assets/powerpoint_slide_3d_icon_1769725123738.png";
 import pptImage1 from "@assets/stock_images/business_presentatio_8750b0c7.jpg";
 import pptImage2 from "@assets/stock_images/powerpoint_presentat_f7546703.jpg";
 import tabletImage from "@assets/stock_images/digital_tablet_prese_b835363a.jpg";
+import diagramPowerPoint from "@/assets/images/powerpoint_parts_diagram_generated.png";
 import { motion } from "framer-motion";
 import { Presentation, Play, MonitorPlay, Palette, Repeat, Sparkles, CheckCircle2, Image as ImageIcon, Type, Shapes, Video, Volume2, MousePointer, Layers } from "lucide-react";
 import { Link } from "wouter";
@@ -243,9 +244,9 @@ export default function PowerPoint() {
             className="mb-16 rounded-2xl overflow-hidden shadow-2xl bg-white p-4 border border-orange-100"
           >
             <img 
-              src="/attached_assets/image_1769748117200.png" 
+              src={diagramPowerPoint} 
               alt="Diagrama de las partes de la ventana de PowerPoint" 
-              className="w-full h-auto rounded-lg"
+              className="w-full h-auto rounded-lg shadow-inner"
             />
           </motion.div>
 
