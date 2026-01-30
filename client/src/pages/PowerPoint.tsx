@@ -243,20 +243,23 @@ export default function PowerPoint() {
             className="mb-16 rounded-2xl overflow-hidden shadow-2xl bg-white p-4 border border-orange-100"
           >
             <img 
-              src="/attached_assets/stock_images/powerpoint_interface_diagram.jpg" 
-              alt="Diagrama de la interfaz de PowerPoint" 
+              src="/attached_assets/image_1769748117200.png" 
+              alt="Diagrama de las partes de la ventana de PowerPoint" 
               className="w-full h-auto rounded-lg"
             />
           </motion.div>
 
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
             {[
-              { title: "Panel de Diapositivas", desc: "Columna izquierda con miniaturas de todas las diapositivas para navegación y reorganización." },
-              { title: "Área de Diapositiva", desc: "Zona central grande donde diseñas y editas el contenido de la diapositiva actual." },
-              { title: "Cinta de Opciones", desc: "Barra superior con pestañas (Inicio, Insertar, Diseño, Transiciones, Animaciones, etc.)." },
-              { title: "Panel de Notas", desc: "Espacio inferior para escribir las notas del orador, invisibles para la audiencia." },
-              { title: "Barra de Estado", desc: "Parte inferior con número de diapositiva, temas, vista y controles de zoom." },
-              { title: "Botones de Vista", desc: "Permiten cambiar entre vista Normal, Clasificador, Lectura y Presentación." }
+              { title: "Barra de herramientas de Acceso Rápido", desc: "Contiene accesos directos a acciones frecuentes como Guardar, Deshacer y Rehacer. Se puede personalizar según el usuario." },
+              { title: "Barra de título", desc: "Muestra el nombre de la presentación y el programa (PowerPoint). Incluye los botones para minimizar, maximizar/restaurar y cerrar." },
+              { title: "Cinta de opciones", desc: "Es la franja donde están todas las herramientas organizadas en pestañas como Inicio, Insertar, Diseño, Transiciones, Animaciones, etc." },
+              { title: "Área de esquema", desc: "Se ubica a la izquierda. Permite ver y organizar el contenido de las diapositivas en forma de esquema o miniaturas." },
+              { title: "Área central", desc: "Es el área principal donde se crean y editan las diapositivas, se agrega texto, imágenes, gráficos y animaciones." },
+              { title: "Área de notas", desc: "Espacio donde el presentador puede escribir notas de apoyo que no se ven durante la presentación al público." },
+              { title: "Barra de estado", desc: "Se encuentra en la parte inferior. Muestra información como el número de diapositivas, idioma, notas y comentarios." },
+              { title: "Botones de vista", desc: "Permiten cambiar la forma de visualizar la presentación: Vista normal, Clasificador de diapositivas y Presentación con diapositivas." },
+              { title: "Zoom", desc: "Sirve para acercar o alejar la diapositiva y trabajar con mayor comodidad y dar formato al contenido." }
             ].map((item, i) => (
               <motion.div
                 key={i}
@@ -267,7 +270,7 @@ export default function PowerPoint() {
                 className="bg-white p-6 rounded-xl shadow-sm border-l-4 border-orange-500"
               >
                 <h3 className="font-bold text-lg text-orange-900 mb-2">{item.title}</h3>
-                <p className="text-slate-600">{item.desc}</p>
+                <p className="text-slate-600 text-sm leading-relaxed">{item.desc}</p>
               </motion.div>
             ))}
           </div>
