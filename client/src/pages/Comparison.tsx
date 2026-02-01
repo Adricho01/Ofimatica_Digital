@@ -176,7 +176,7 @@ export default function Comparison() {
       {/* Decision Guide */}
       <div className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-12 text-center">¿Cuál Usar?</h2>
+          <h2 className="text-3xl font-bold mb-12 text-center">¿Según tu necesidad cual usarias o eligirias?</h2>
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {[
               {
